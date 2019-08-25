@@ -8,63 +8,102 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data.SqlClient;
+using System.Configuration;
+
 namespace PERSONIL
 {
     public partial class Form1 : Form
     {
+        SqlDataReader dr;
+        //SqlConnection conn;
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void b_home_Click(object sender, EventArgs e)
+        public Form1(string nip_nrp)
         {
-            Form1 Frm = new Form1();
-            Frm.Show();
-            this.Hide();
+            InitializeComponent();
+            t_nip_nrp.Text = nip_nrp;
+            t_nip_nrp.Enabled = false;
         }
 
         private void b_data_pokok_Click(object sender, EventArgs e)
         {
-            DataPokok dtPokok = new DataPokok();
+            DataPokok dtPokok = new DataPokok(t_nip_nrp.Text);
             dtPokok.Show();
             this.Hide();
         }
 
         private void b_kartu_identitas_Click(object sender, EventArgs e)
         {
-            Kartu_Identitas krident = new Kartu_Identitas();
-            krident.ShowDialog();
-        }
-
-        private void b_satker_Click(object sender, EventArgs e)
-        {
-            Satuan_Kerja satker = new Satuan_Kerja();
-            satker.ShowDialog();
+            Kartu_Identitas krident = new Kartu_Identitas(t_nip_nrp.Text);
+            krident.Show();
+            this.Hide();
         }
 
         private void b_r_pangkat_Click(object sender, EventArgs e)
         {
-            Riwayat_Pangkat rpang = new Riwayat_Pangkat();
-            rpang.ShowDialog();
+            Riwayat_Pangkat rpang = new Riwayat_Pangkat(t_nip_nrp.Text);
+            rpang.Show();
+            this.Hide();
         }
 
         private void b_r_jabatan_Click(object sender, EventArgs e)
         {
-            Riwayat_Jabatan rjab = new Riwayat_Jabatan();
-            rjab.ShowDialog();
+            Riwayat_Jabatan rj = new Riwayat_Jabatan(t_nip_nrp.Text);
+            rj.Show();
+            this.Hide();
         }
 
-        private void b_dikum_Click(object sender, EventArgs e)
+        private void b_r_pendidikan_Click(object sender, EventArgs e)
         {
-            Pendidikan_Umum pendum = new Pendidikan_Umum();
-            pendum.ShowDialog();
+            Riwayat_Pendidikan rp = new Riwayat_Pendidikan(t_nip_nrp.Text);
+            rp.Show();
+            this.Hide();
         }
 
-        private void b_diktuk_Click(object sender, EventArgs e)
+        private void b_r_penugasan_Click(object sender, EventArgs e)
         {
-            Pendidikan_mil_pembentukan pendmil = new Pendidikan_mil_pembentukan();
-            pendmil.ShowDialog();
+            Riwayat_Penugasan rpen = new Riwayat_Penugasan(t_nip_nrp.Text);
+            rpen.Show();
+            this.Hide();
+        }
+
+        private void b_r_tanda_jasa_Click(object sender, EventArgs e)
+        {
+            Riwayat_Tanda_Jasa rtj = new Riwayat_Tanda_Jasa(t_nip_nrp.Text);
+            rtj.Show();
+            this.Hide();
+        }
+
+        private void b_bahasa_Click(object sender, EventArgs e)
+        {
+            Bahasa b = new Bahasa(t_nip_nrp.Text);
+            b.Show();
+            this.Hide();
+        }
+
+        private void b_r_keluarga_Click(object sender, EventArgs e)
+        {
+            Riwayat_Keluarga rk = new Riwayat_Keluarga(t_nip_nrp.Text);
+            rk.Show();
+            this.Hide();
+        }
+
+        private void b_ubah_password_Click(object sender, EventArgs e)
+        {
+            Ubah_Password up = new Ubah_Password(t_nip_nrp.Text);
+            up.Show();
+            this.Hide();
+        }
+
+        private void b_dokumen_Click(object sender, EventArgs e)
+        {
+            Dokumen d = new Dokumen(t_nip_nrp.Text);
+            d.Show();
+            this.Hide();
         }
     }
 }

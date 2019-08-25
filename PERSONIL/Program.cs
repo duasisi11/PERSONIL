@@ -16,9 +16,7 @@ namespace PERSONIL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            //Application.Run(new DataPokok());
-            //Application.Run(new Kartu_Identitas());
+            Application.Run(new LoginForm());
         }
     }
 }

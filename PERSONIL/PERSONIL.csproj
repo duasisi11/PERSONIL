@@ -11,6 +11,21 @@
     <AssemblyName>PERSONIL</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,11 +59,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bahasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bahasa.Designer.cs">
+      <DependentUpon>Bahasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
     <Compile Include="DataPokok.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataPokok.Designer.cs">
       <DependentUpon>DataPokok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dokumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dokumen.Designer.cs">
+      <DependentUpon>Dokumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DS_Data_Personil.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Data_Personil.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -62,25 +101,43 @@
     <Compile Include="Kartu_Identitas.Designer.cs">
       <DependentUpon>Kartu_Identitas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pendidikan_mil_pembentukan.cs">
+    <Compile Include="Kategori_Pendidikan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pendidikan_mil_pembentukan.Designer.cs">
-      <DependentUpon>Pendidikan_mil_pembentukan.cs</DependentUpon>
+    <Compile Include="Kategori_Pendidikan.Designer.cs">
+      <DependentUpon>Kategori_Pendidikan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pendidikan_Umum.cs">
+    <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pendidikan_Umum.Designer.cs">
-      <DependentUpon>Pendidikan_Umum.cs</DependentUpon>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manajemen_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manajemen_User.Designer.cs">
+      <DependentUpon>Manajemen_User.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RekapDataPersonil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RekapDataPersonil.Designer.cs">
+      <DependentUpon>RekapDataPersonil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Riwayat_Jabatan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Riwayat_Jabatan.Designer.cs">
       <DependentUpon>Riwayat_Jabatan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riwayat_Keluarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Riwayat_Keluarga.Designer.cs">
+      <DependentUpon>Riwayat_Keluarga.cs</DependentUpon>
     </Compile>
     <Compile Include="Riwayat_Pangkat.cs">
       <SubType>Form</SubType>
@@ -88,14 +145,47 @@
     <Compile Include="Riwayat_Pangkat.Designer.cs">
       <DependentUpon>Riwayat_Pangkat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Riwayat_Pendidikan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Riwayat_Pendidikan.Designer.cs">
+      <DependentUpon>Riwayat_Pendidikan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riwayat_Penugasan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Riwayat_Penugasan.Designer.cs">
+      <DependentUpon>Riwayat_Penugasan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Riwayat_Tanda_Jasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Riwayat_Tanda_Jasa.Designer.cs">
+      <DependentUpon>Riwayat_Tanda_Jasa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Satuan_Kerja.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Satuan_Kerja.Designer.cs">
       <DependentUpon>Satuan_Kerja.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ubah_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ubah_Password.Designer.cs">
+      <DependentUpon>Ubah_Password.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bahasa.resx">
+      <DependentUpon>Bahasa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataPokok.resx">
       <DependentUpon>DataPokok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dokumen.resx">
+      <DependentUpon>Dokumen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -103,11 +193,14 @@
     <EmbeddedResource Include="Kartu_Identitas.resx">
       <DependentUpon>Kartu_Identitas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pendidikan_mil_pembentukan.resx">
-      <DependentUpon>Pendidikan_mil_pembentukan.cs</DependentUpon>
+    <EmbeddedResource Include="Kategori_Pendidikan.resx">
+      <DependentUpon>Kategori_Pendidikan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pendidikan_Umum.resx">
-      <DependentUpon>Pendidikan_Umum.cs</DependentUpon>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manajemen_User.resx">
+      <DependentUpon>Manajemen_User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,16 +210,46 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RekapDataPersonil.resx">
+      <DependentUpon>RekapDataPersonil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Riwayat_Jabatan.resx">
       <DependentUpon>Riwayat_Jabatan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Riwayat_Keluarga.resx">
+      <DependentUpon>Riwayat_Keluarga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Riwayat_Pangkat.resx">
       <DependentUpon>Riwayat_Pangkat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Riwayat_Pendidikan.resx">
+      <DependentUpon>Riwayat_Pendidikan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Riwayat_Penugasan.resx">
+      <DependentUpon>Riwayat_Penugasan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Riwayat_Tanda_Jasa.resx">
+      <DependentUpon>Riwayat_Tanda_Jasa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Satuan_Kerja.resx">
       <DependentUpon>Satuan_Kerja.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ubah_Password.resx">
+      <DependentUpon>Ubah_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DS_Data_Personil.xsc">
+      <DependentUpon>DS_Data_Personil.xsd</DependentUpon>
+    </None>
+    <None Include="DS_Data_Personil.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Data_Personil.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DS_Data_Personil.xss">
+      <DependentUpon>DS_Data_Personil.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -139,6 +262,38 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male-user-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Refresh-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male-user-edit-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male-user-remove-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

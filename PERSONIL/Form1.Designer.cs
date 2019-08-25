@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.b_keluarga = new System.Windows.Forms.Button();
+            this.b_dokumen = new System.Windows.Forms.Button();
+            this.b_ubah_password = new System.Windows.Forms.Button();
+            this.b_r_keluarga = new System.Windows.Forms.Button();
             this.b_bahasa = new System.Windows.Forms.Button();
-            this.b_tanda_jasa = new System.Windows.Forms.Button();
-            this.b_penugasan = new System.Windows.Forms.Button();
-            this.b_diktuk = new System.Windows.Forms.Button();
-            this.b_dikum = new System.Windows.Forms.Button();
+            this.b_r_tanda_jasa = new System.Windows.Forms.Button();
+            this.b_r_penugasan = new System.Windows.Forms.Button();
+            this.b_r_pendidikan = new System.Windows.Forms.Button();
             this.b_r_jabatan = new System.Windows.Forms.Button();
             this.b_home = new System.Windows.Forms.Button();
             this.b_r_pangkat = new System.Windows.Forms.Button();
-            this.b_satker = new System.Windows.Forms.Button();
             this.b_kartu_identitas = new System.Windows.Forms.Button();
             this.b_data_pokok = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -49,6 +49,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.t_nip_nrp = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,16 +60,16 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
-            this.panel1.Controls.Add(this.b_keluarga);
+            this.panel1.Controls.Add(this.b_dokumen);
+            this.panel1.Controls.Add(this.b_ubah_password);
+            this.panel1.Controls.Add(this.b_r_keluarga);
             this.panel1.Controls.Add(this.b_bahasa);
-            this.panel1.Controls.Add(this.b_tanda_jasa);
-            this.panel1.Controls.Add(this.b_penugasan);
-            this.panel1.Controls.Add(this.b_diktuk);
-            this.panel1.Controls.Add(this.b_dikum);
+            this.panel1.Controls.Add(this.b_r_tanda_jasa);
+            this.panel1.Controls.Add(this.b_r_penugasan);
+            this.panel1.Controls.Add(this.b_r_pendidikan);
             this.panel1.Controls.Add(this.b_r_jabatan);
             this.panel1.Controls.Add(this.b_home);
             this.panel1.Controls.Add(this.b_r_pangkat);
-            this.panel1.Controls.Add(this.b_satker);
             this.panel1.Controls.Add(this.b_kartu_identitas);
             this.panel1.Controls.Add(this.b_data_pokok);
             this.panel1.Controls.Add(this.panel5);
@@ -76,25 +77,62 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(176, 688);
+            this.panel1.Size = new System.Drawing.Size(176, 666);
             this.panel1.TabIndex = 0;
             // 
-            // b_keluarga
+            // b_dokumen
             // 
-            this.b_keluarga.FlatAppearance.BorderSize = 0;
-            this.b_keluarga.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_keluarga.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_keluarga.ForeColor = System.Drawing.Color.White;
-            this.b_keluarga.Image = ((System.Drawing.Image)(resources.GetObject("b_keluarga.Image")));
-            this.b_keluarga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_keluarga.Location = new System.Drawing.Point(10, 623);
-            this.b_keluarga.Name = "b_keluarga";
-            this.b_keluarga.Size = new System.Drawing.Size(167, 38);
-            this.b_keluarga.TabIndex = 39;
-            this.b_keluarga.Text = "Keluarga";
-            this.b_keluarga.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_keluarga.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.b_keluarga.UseVisualStyleBackColor = true;
+            this.b_dokumen.FlatAppearance.BorderSize = 0;
+            this.b_dokumen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_dokumen.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_dokumen.ForeColor = System.Drawing.Color.White;
+            this.b_dokumen.Image = ((System.Drawing.Image)(resources.GetObject("b_dokumen.Image")));
+            this.b_dokumen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_dokumen.Location = new System.Drawing.Point(9, 574);
+            this.b_dokumen.Name = "b_dokumen";
+            this.b_dokumen.Size = new System.Drawing.Size(167, 38);
+            this.b_dokumen.TabIndex = 41;
+            this.b_dokumen.Text = "Dokumen";
+            this.b_dokumen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_dokumen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.b_dokumen.UseVisualStyleBackColor = true;
+            this.b_dokumen.Click += new System.EventHandler(this.b_dokumen_Click);
+            // 
+            // b_ubah_password
+            // 
+            this.b_ubah_password.FlatAppearance.BorderSize = 0;
+            this.b_ubah_password.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_ubah_password.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_ubah_password.ForeColor = System.Drawing.Color.White;
+            this.b_ubah_password.Image = ((System.Drawing.Image)(resources.GetObject("b_ubah_password.Image")));
+            this.b_ubah_password.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_ubah_password.Location = new System.Drawing.Point(9, 617);
+            this.b_ubah_password.Name = "b_ubah_password";
+            this.b_ubah_password.Size = new System.Drawing.Size(167, 38);
+            this.b_ubah_password.TabIndex = 40;
+            this.b_ubah_password.Text = "Ubah Password";
+            this.b_ubah_password.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_ubah_password.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.b_ubah_password.UseVisualStyleBackColor = true;
+            this.b_ubah_password.Click += new System.EventHandler(this.b_ubah_password_Click);
+            // 
+            // b_r_keluarga
+            // 
+            this.b_r_keluarga.FlatAppearance.BorderSize = 0;
+            this.b_r_keluarga.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_r_keluarga.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_r_keluarga.ForeColor = System.Drawing.Color.White;
+            this.b_r_keluarga.Image = ((System.Drawing.Image)(resources.GetObject("b_r_keluarga.Image")));
+            this.b_r_keluarga.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_r_keluarga.Location = new System.Drawing.Point(9, 529);
+            this.b_r_keluarga.Name = "b_r_keluarga";
+            this.b_r_keluarga.Size = new System.Drawing.Size(167, 38);
+            this.b_r_keluarga.TabIndex = 39;
+            this.b_r_keluarga.Text = "Riwayat Keluarga";
+            this.b_r_keluarga.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_r_keluarga.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.b_r_keluarga.UseVisualStyleBackColor = true;
+            this.b_r_keluarga.Click += new System.EventHandler(this.b_r_keluarga_Click);
             // 
             // b_bahasa
             // 
@@ -104,7 +142,7 @@
             this.b_bahasa.ForeColor = System.Drawing.Color.White;
             this.b_bahasa.Image = ((System.Drawing.Image)(resources.GetObject("b_bahasa.Image")));
             this.b_bahasa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_bahasa.Location = new System.Drawing.Point(10, 577);
+            this.b_bahasa.Location = new System.Drawing.Point(9, 483);
             this.b_bahasa.Name = "b_bahasa";
             this.b_bahasa.Size = new System.Drawing.Size(167, 38);
             this.b_bahasa.TabIndex = 38;
@@ -112,76 +150,61 @@
             this.b_bahasa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.b_bahasa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.b_bahasa.UseVisualStyleBackColor = true;
+            this.b_bahasa.Click += new System.EventHandler(this.b_bahasa_Click);
             // 
-            // b_tanda_jasa
+            // b_r_tanda_jasa
             // 
-            this.b_tanda_jasa.FlatAppearance.BorderSize = 0;
-            this.b_tanda_jasa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_tanda_jasa.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_tanda_jasa.ForeColor = System.Drawing.Color.White;
-            this.b_tanda_jasa.Image = ((System.Drawing.Image)(resources.GetObject("b_tanda_jasa.Image")));
-            this.b_tanda_jasa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_tanda_jasa.Location = new System.Drawing.Point(10, 531);
-            this.b_tanda_jasa.Name = "b_tanda_jasa";
-            this.b_tanda_jasa.Size = new System.Drawing.Size(167, 38);
-            this.b_tanda_jasa.TabIndex = 37;
-            this.b_tanda_jasa.Text = "Tanda Jasa";
-            this.b_tanda_jasa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_tanda_jasa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.b_tanda_jasa.UseVisualStyleBackColor = true;
+            this.b_r_tanda_jasa.FlatAppearance.BorderSize = 0;
+            this.b_r_tanda_jasa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_r_tanda_jasa.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_r_tanda_jasa.ForeColor = System.Drawing.Color.White;
+            this.b_r_tanda_jasa.Image = ((System.Drawing.Image)(resources.GetObject("b_r_tanda_jasa.Image")));
+            this.b_r_tanda_jasa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_r_tanda_jasa.Location = new System.Drawing.Point(9, 438);
+            this.b_r_tanda_jasa.Name = "b_r_tanda_jasa";
+            this.b_r_tanda_jasa.Size = new System.Drawing.Size(167, 38);
+            this.b_r_tanda_jasa.TabIndex = 37;
+            this.b_r_tanda_jasa.Text = "Riwayat Tanda Jasa";
+            this.b_r_tanda_jasa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_r_tanda_jasa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.b_r_tanda_jasa.UseVisualStyleBackColor = true;
+            this.b_r_tanda_jasa.Click += new System.EventHandler(this.b_r_tanda_jasa_Click);
             // 
-            // b_penugasan
+            // b_r_penugasan
             // 
-            this.b_penugasan.FlatAppearance.BorderSize = 0;
-            this.b_penugasan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_penugasan.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_penugasan.ForeColor = System.Drawing.Color.White;
-            this.b_penugasan.Image = ((System.Drawing.Image)(resources.GetObject("b_penugasan.Image")));
-            this.b_penugasan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_penugasan.Location = new System.Drawing.Point(9, 486);
-            this.b_penugasan.Name = "b_penugasan";
-            this.b_penugasan.Size = new System.Drawing.Size(167, 38);
-            this.b_penugasan.TabIndex = 36;
-            this.b_penugasan.Text = "Penugasan";
-            this.b_penugasan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_penugasan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.b_penugasan.UseVisualStyleBackColor = true;
+            this.b_r_penugasan.FlatAppearance.BorderSize = 0;
+            this.b_r_penugasan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_r_penugasan.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_r_penugasan.ForeColor = System.Drawing.Color.White;
+            this.b_r_penugasan.Image = ((System.Drawing.Image)(resources.GetObject("b_r_penugasan.Image")));
+            this.b_r_penugasan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_r_penugasan.Location = new System.Drawing.Point(9, 393);
+            this.b_r_penugasan.Name = "b_r_penugasan";
+            this.b_r_penugasan.Size = new System.Drawing.Size(167, 38);
+            this.b_r_penugasan.TabIndex = 36;
+            this.b_r_penugasan.Text = "Riwayat Penugasan";
+            this.b_r_penugasan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_r_penugasan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.b_r_penugasan.UseVisualStyleBackColor = true;
+            this.b_r_penugasan.Click += new System.EventHandler(this.b_r_penugasan_Click);
             // 
-            // b_diktuk
+            // b_r_pendidikan
             // 
-            this.b_diktuk.FlatAppearance.BorderSize = 0;
-            this.b_diktuk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_diktuk.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_diktuk.ForeColor = System.Drawing.Color.White;
-            this.b_diktuk.Image = ((System.Drawing.Image)(resources.GetObject("b_diktuk.Image")));
-            this.b_diktuk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_diktuk.Location = new System.Drawing.Point(9, 441);
-            this.b_diktuk.Name = "b_diktuk";
-            this.b_diktuk.Size = new System.Drawing.Size(167, 38);
-            this.b_diktuk.TabIndex = 35;
-            this.b_diktuk.Text = "Pendidikan Mil/Pembentukan";
-            this.b_diktuk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_diktuk.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.b_diktuk.UseVisualStyleBackColor = true;
-            this.b_diktuk.Click += new System.EventHandler(this.b_diktuk_Click);
-            // 
-            // b_dikum
-            // 
-            this.b_dikum.FlatAppearance.BorderSize = 0;
-            this.b_dikum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_dikum.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_dikum.ForeColor = System.Drawing.Color.White;
-            this.b_dikum.Image = ((System.Drawing.Image)(resources.GetObject("b_dikum.Image")));
-            this.b_dikum.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_dikum.Location = new System.Drawing.Point(9, 397);
-            this.b_dikum.Name = "b_dikum";
-            this.b_dikum.Size = new System.Drawing.Size(167, 38);
-            this.b_dikum.TabIndex = 34;
-            this.b_dikum.Text = "Pendidikan Umum";
-            this.b_dikum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.b_dikum.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.b_dikum.UseVisualStyleBackColor = true;
-            this.b_dikum.Click += new System.EventHandler(this.b_dikum_Click);
+            this.b_r_pendidikan.FlatAppearance.BorderSize = 0;
+            this.b_r_pendidikan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_r_pendidikan.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_r_pendidikan.ForeColor = System.Drawing.Color.White;
+            this.b_r_pendidikan.Image = ((System.Drawing.Image)(resources.GetObject("b_r_pendidikan.Image")));
+            this.b_r_pendidikan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_r_pendidikan.Location = new System.Drawing.Point(9, 346);
+            this.b_r_pendidikan.Name = "b_r_pendidikan";
+            this.b_r_pendidikan.Size = new System.Drawing.Size(167, 38);
+            this.b_r_pendidikan.TabIndex = 34;
+            this.b_r_pendidikan.Text = "Riwayat Pendidikan";
+            this.b_r_pendidikan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_r_pendidikan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.b_r_pendidikan.UseVisualStyleBackColor = true;
+            this.b_r_pendidikan.Click += new System.EventHandler(this.b_r_pendidikan_Click);
             // 
             // b_r_jabatan
             // 
@@ -191,7 +214,7 @@
             this.b_r_jabatan.ForeColor = System.Drawing.Color.White;
             this.b_r_jabatan.Image = ((System.Drawing.Image)(resources.GetObject("b_r_jabatan.Image")));
             this.b_r_jabatan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_r_jabatan.Location = new System.Drawing.Point(9, 353);
+            this.b_r_jabatan.Location = new System.Drawing.Point(9, 300);
             this.b_r_jabatan.Name = "b_r_jabatan";
             this.b_r_jabatan.Size = new System.Drawing.Size(167, 38);
             this.b_r_jabatan.TabIndex = 33;
@@ -209,7 +232,7 @@
             this.b_home.ForeColor = System.Drawing.Color.White;
             this.b_home.Image = ((System.Drawing.Image)(resources.GetObject("b_home.Image")));
             this.b_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_home.Location = new System.Drawing.Point(9, 124);
+            this.b_home.Location = new System.Drawing.Point(9, 121);
             this.b_home.Name = "b_home";
             this.b_home.Size = new System.Drawing.Size(167, 38);
             this.b_home.TabIndex = 32;
@@ -217,7 +240,6 @@
             this.b_home.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.b_home.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.b_home.UseVisualStyleBackColor = true;
-            this.b_home.Click += new System.EventHandler(this.b_home_Click);
             // 
             // b_r_pangkat
             // 
@@ -227,7 +249,7 @@
             this.b_r_pangkat.ForeColor = System.Drawing.Color.White;
             this.b_r_pangkat.Image = ((System.Drawing.Image)(resources.GetObject("b_r_pangkat.Image")));
             this.b_r_pangkat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_r_pangkat.Location = new System.Drawing.Point(9, 307);
+            this.b_r_pangkat.Location = new System.Drawing.Point(8, 254);
             this.b_r_pangkat.Name = "b_r_pangkat";
             this.b_r_pangkat.Size = new System.Drawing.Size(167, 38);
             this.b_r_pangkat.TabIndex = 31;
@@ -237,24 +259,6 @@
             this.b_r_pangkat.UseVisualStyleBackColor = true;
             this.b_r_pangkat.Click += new System.EventHandler(this.b_r_pangkat_Click);
             // 
-            // b_satker
-            // 
-            this.b_satker.FlatAppearance.BorderSize = 0;
-            this.b_satker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_satker.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_satker.ForeColor = System.Drawing.Color.White;
-            this.b_satker.Image = ((System.Drawing.Image)(resources.GetObject("b_satker.Image")));
-            this.b_satker.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_satker.Location = new System.Drawing.Point(9, 260);
-            this.b_satker.Name = "b_satker";
-            this.b_satker.Size = new System.Drawing.Size(167, 38);
-            this.b_satker.TabIndex = 30;
-            this.b_satker.Text = "Satuan Kerja";
-            this.b_satker.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.b_satker.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.b_satker.UseVisualStyleBackColor = true;
-            this.b_satker.Click += new System.EventHandler(this.b_satker_Click);
-            // 
             // b_kartu_identitas
             // 
             this.b_kartu_identitas.FlatAppearance.BorderSize = 0;
@@ -263,7 +267,7 @@
             this.b_kartu_identitas.ForeColor = System.Drawing.Color.White;
             this.b_kartu_identitas.Image = ((System.Drawing.Image)(resources.GetObject("b_kartu_identitas.Image")));
             this.b_kartu_identitas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_kartu_identitas.Location = new System.Drawing.Point(9, 213);
+            this.b_kartu_identitas.Location = new System.Drawing.Point(9, 209);
             this.b_kartu_identitas.Name = "b_kartu_identitas";
             this.b_kartu_identitas.Size = new System.Drawing.Size(167, 38);
             this.b_kartu_identitas.TabIndex = 29;
@@ -281,7 +285,7 @@
             this.b_data_pokok.ForeColor = System.Drawing.Color.White;
             this.b_data_pokok.Image = ((System.Drawing.Image)(resources.GetObject("b_data_pokok.Image")));
             this.b_data_pokok.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_data_pokok.Location = new System.Drawing.Point(9, 167);
+            this.b_data_pokok.Location = new System.Drawing.Point(9, 164);
             this.b_data_pokok.Name = "b_data_pokok";
             this.b_data_pokok.Size = new System.Drawing.Size(167, 38);
             this.b_data_pokok.TabIndex = 28;
@@ -294,7 +298,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(3, 124);
+            this.panel5.Location = new System.Drawing.Point(3, 121);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(5, 38);
             this.panel5.TabIndex = 0;
@@ -311,9 +315,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(33, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 10);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(96, 97);
+            this.pictureBox1.Size = new System.Drawing.Size(98, 95);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -323,7 +327,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(176, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(706, 45);
+            this.panel2.Size = new System.Drawing.Size(1134, 45);
             this.panel2.TabIndex = 1;
             // 
             // label2
@@ -343,7 +347,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(176, 45);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(706, 73);
+            this.panel4.Size = new System.Drawing.Size(1134, 73);
             this.panel4.TabIndex = 2;
             // 
             // label1
@@ -353,21 +357,32 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(25, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 46);
+            this.label1.Size = new System.Drawing.Size(127, 46);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome";
+            this.label1.Text = "Home";
+            // 
+            // t_nip_nrp
+            // 
+            this.t_nip_nrp.BackColor = System.Drawing.SystemColors.Control;
+            this.t_nip_nrp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.t_nip_nrp.Location = new System.Drawing.Point(183, 125);
+            this.t_nip_nrp.Name = "t_nip_nrp";
+            this.t_nip_nrp.Size = new System.Drawing.Size(155, 13);
+            this.t_nip_nrp.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(882, 688);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1310, 666);
+            this.Controls.Add(this.t_nip_nrp);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Home";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -376,6 +391,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -389,18 +405,19 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button b_keluarga;
+        private System.Windows.Forms.Button b_r_keluarga;
         private System.Windows.Forms.Button b_bahasa;
-        private System.Windows.Forms.Button b_tanda_jasa;
-        private System.Windows.Forms.Button b_penugasan;
-        private System.Windows.Forms.Button b_diktuk;
-        private System.Windows.Forms.Button b_dikum;
+        private System.Windows.Forms.Button b_r_tanda_jasa;
+        private System.Windows.Forms.Button b_r_penugasan;
+        private System.Windows.Forms.Button b_r_pendidikan;
         private System.Windows.Forms.Button b_r_jabatan;
         private System.Windows.Forms.Button b_home;
         private System.Windows.Forms.Button b_r_pangkat;
-        private System.Windows.Forms.Button b_satker;
         private System.Windows.Forms.Button b_kartu_identitas;
         private System.Windows.Forms.Button b_data_pokok;
+        private System.Windows.Forms.TextBox t_nip_nrp;
+        private System.Windows.Forms.Button b_ubah_password;
+        private System.Windows.Forms.Button b_dokumen;
     }
 }
 

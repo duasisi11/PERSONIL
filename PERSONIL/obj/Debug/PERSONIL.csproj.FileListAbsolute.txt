@@ -13,3 +13,60 @@ C:\Users\TOSHIBA\documents\visual studio 2013\Projects\PERSONIL\PERSONIL\obj\Deb
 C:\Users\TOSHIBA\documents\visual studio 2013\Projects\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Pendidikan_mil_pembentukan.resources
 C:\Users\TOSHIBA\documents\visual studio 2013\Projects\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Pendidikan_Umum.resources
 C:\Users\TOSHIBA\documents\visual studio 2013\Projects\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Jabatan.resources
+C:\Users\TOSHIBA\documents\visual studio 2013\Projects\PERSONIL\PERSONIL\obj\Debug\PERSONIL.AdminForm.resources
+C:\Users\TOSHIBA\documents\visual studio 2013\Projects\PERSONIL\PERSONIL\obj\Debug\PERSONIL.LoginForm.resources
+C:\Users\TOSHIBA\documents\visual studio 2013\Projects\PERSONIL\PERSONIL\obj\Debug\PERSONIL.RekapDataPersonil.resources
+C:\Users\TOSHIBA\documents\visual studio 2013\Projects\PERSONIL\PERSONIL\obj\Debug\PERSONIL.csprojResolveAssemblyReference.cache
+C:\Users\TOSHIBA\Documents\Visual Studio 2013\Projects\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Keluarga.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\bin\Debug\PERSONIL.exe.config
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\bin\Debug\PERSONIL.exe
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\bin\Debug\PERSONIL.pdb
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.AdminForm.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.DataPokok.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Form1.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Kartu_Identitas.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.LoginForm.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Properties.Resources.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.RekapDataPersonil.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Jabatan.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Keluarga.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Pangkat.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Satuan_Kerja.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.csproj.GenerateResource.Cache
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.exe
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.pdb
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.csprojResolveAssemblyReference.cache
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Kategori_Pendidikan.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Pendidikan.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Penugasan.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Bahasa.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Tanda_Jasa.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Ubah_Password.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Manajement_User.resources
+D:\Manajemen-Data-Personil\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Dokumen.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\bin\Debug\PERSONIL.exe.config
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.exe
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.pdb
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\bin\Debug\PERSONIL.exe
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\bin\Debug\PERSONIL.pdb
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.csprojResolveAssemblyReference.cache
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.AdminForm.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Bahasa.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.DataPokok.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Dokumen.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Form1.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Kartu_Identitas.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Kategori_Pendidikan.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.LoginForm.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Properties.Resources.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.RekapDataPersonil.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Jabatan.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Keluarga.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Pangkat.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Pendidikan.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Penugasan.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Riwayat_Tanda_Jasa.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Satuan_Kerja.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Ubah_Password.resources
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.csproj.GenerateResource.Cache
+D:\KELOMPOK 4\MANAJEMENT-DATA-PERSONIL-TERBARU\PERSONIL\PERSONIL\obj\Debug\PERSONIL.Manajemen_User.resources
